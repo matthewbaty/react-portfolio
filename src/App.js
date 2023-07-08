@@ -6,12 +6,13 @@ import Contact from "./components/Contact/index.js";
 import Projects from "./components/Projects/index.js";
 import Resume from "./components/Resume/index.js";
 import Footer from './components/Footer/index.js';
+import './App.css';
 
 export default function App() {
   const [navLinks] = useState([
     { name: "About" },
     { name: "Projects" },
-    { name: "Skills" },
+    { name: "Resume" },
     { name: "Contact" }
   ]);
 
@@ -24,11 +25,11 @@ export default function App() {
         currentNav={currentNav}
         setCurrentNav={setCurrentNav}
       ></Navbar>
-      <main>
-        {currentNav.name === "About" && <About></About>}
-        {currentNav.name === "Projects" && <Projects></Projects>}
-        {currentNav.name === "Resume" && <Resume></Resume>}
-        {currentNav.name === "Contact" && <Contact></Contact>}
+      <main id="mainContent">
+        {currentNav === navLinks[0] && <About></About>}
+        {currentNav === navLinks[1] && <Projects></Projects>}
+        {currentNav === navLinks[2] && <Resume></Resume>}
+        {currentNav === navLinks[3] && <Contact></Contact>}
       </main>
       <Footer></Footer>
     </div>
