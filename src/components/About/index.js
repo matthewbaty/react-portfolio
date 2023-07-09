@@ -3,7 +3,7 @@ import MyImage from "../../assets/images/my-family3.png";
 
 export default function About() {
     return (
-        <section className="row text-center m-3">
+        <section className="row g-0 text-center" id="aboutSection">
             <div className="col-md-6 d-flex flex-column align-items-center justify-content-center text-center p-3">
                 <h1 className="display-4">About Me</h1>
                 <p className="font-san-serif">Hello, everyone! My name is Matthew Baty, I am 28 years old, and I live in Charlotte, NC. I have been
@@ -16,7 +16,7 @@ export default function About() {
                     Associate Full Stack Developer thanks to the UNC Charlotte Coding Bootcamp. I am excited to see where this new career path takes me!</p>
             </div>
             <div className="col-md-6 d-flex align-items-center justify-content-center">
-                <img src={MyImage} className="img-fluid m-3" alt="Matthew Baty and his family" />
+                <img src={MyImage} className="img-fluid mt-3 p-2" alt="Matthew Baty and his family" />
             </div>
         </section>
     );

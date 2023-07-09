@@ -8,7 +8,7 @@ export const projects = [
     },
     {
         title: 'Petfolio',
-        desciption: 'This web application will allow a user to create a user account then add you pets info including pictues, features, and records to their profile.',
+        description: 'This web application will allow a user to create a user account then add you pets info including pictues, features, and records to their profile.',
         image: require('./assets/images/petfolio.png'),
         deployLink: 'https://warm-bayou-82837.herokuapp.com/login',
         repoLink: 'https://github.com/matthewbaty/petfolio',

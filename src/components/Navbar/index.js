@@ -1,16 +1,17 @@
 import React from "react";
 import "./index.css";
 
-export default function Navbar({ navLinks = [], currentLink, setCurrentLink }) {
+export default function Navbar({ navLinks = [], currentLink, setCurrentNav }) {
     return (
         <ul id="navBar" className="nav nav-tabs sticky-top justify-content-center">
             {navLinks.map((navLink) => (
-                <li className="nav-item" key={navLink.name}>
+                <li key={navLink.name} className="nav-item">
                     <a
-                    className={`nav-link text-dark ${currentLink === navLink ? 'active' : ''}`}
+                    id="navLink"
+                    className={`nav-link ${currentLink === navLink ? 'active' : ''}`}
                     href={navLink.url}
                     onClick={() => {
-                        setCurrentLink(navLink);
+                        setCurrentNav(navLink);
                     }}
                     >
                         {navLink.name}

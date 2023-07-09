@@ -24,7 +24,7 @@ export default function App() {
         navLinks={navLinks}
         currentNav={currentNav}
         setCurrentNav={setCurrentNav}
-      ></Navbar>
+      />
       <main id="mainContent">
         {currentNav === navLinks[0] && <About></About>}
         {currentNav === navLinks[1] && <Projects></Projects>}
@@ -34,4 +34,4 @@ export default function App() {
       <Footer></Footer>
     </div>
   );
-}
+};

@@ -1,9 +1,10 @@
 import React from "react";
 import { projects } from "../../projects";
+import "./index.css";
 
 export default function Projects() {
     return (
-        <section id="projects" className="m-3 pb-5">
+        <section id="projects">
             <div className="text-center">
                 <h1 className="d-flex justify-content-center">Projects</h1>
             </div>
@@ -39,7 +40,7 @@ export default function Projects() {
                             <img
                                 src={res.image}
                                 alt={res.title}
-                                className="img-fluid m-3"
+                                className="img-fluid m-1"
                             />
                         </a>
                     </div>
