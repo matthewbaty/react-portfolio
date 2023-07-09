@@ -1,0 +1,16 @@
+.pdfContainer, .pdf {
+    height:100%
+}
+
+.pdf {
+    width: 100%;
+}
+
+#resume {
+    width: auto;
+    height: 100%;
+}
+
+#resumeSection {
+    height: 100%;
+}
