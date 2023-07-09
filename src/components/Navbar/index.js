@@ -7,7 +7,7 @@ export default function Navbar({ navLinks = [], currentLink, setCurrentLink }) {
             {navLinks.map((navLink) => (
                 <li className="nav-item" key={navLink.name}>
                     <a
-                    className={navLink.name === currentLink ? "nav-link active" : "nav-link"}
+                    className={`nav-link text-dark ${currentLink === navLink ? 'active' : ''}`}
                     href={navLink.url}
                     onClick={() => {
                         setCurrentLink(navLink);
