@@ -12,7 +12,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
             >
-                <img src={GitHubLogo} alt="GitHub Logo" />
+                <img src={GitHubLogo} alt="GitHub Logo" className="footerLogos"/>
             </a>
             <a
                 className="mx-3 my-1"
@@ -20,7 +20,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
             >
-                <img src={LinkedInLogo} alt="LinkedIn Logo" />
+                <img src={LinkedInLogo} alt="LinkedIn Logo" className="footerLogos"/>
             </a>
         </footer>
     );
