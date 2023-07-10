@@ -1,5 +1,6 @@
 import React from "react";
 import MyImage from "../../assets/images/my-family3.png";
+import "./index.css";
 
 export default function About() {
     return (

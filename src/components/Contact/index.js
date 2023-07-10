@@ -8,6 +8,7 @@ export default function Contact() {
     });
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState("");
+    console.log(formState);
 
     function validateEmail(email) {
         const emailRegex =
