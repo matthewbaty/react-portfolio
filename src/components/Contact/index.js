@@ -9,11 +9,11 @@ export default function Contact() {
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState("");
 
-    // function validateEmail(email) {
-    //     const emailRegex =
-    //         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    //     return emailRegex.test(String(email).toLowerCase());
-    // };
+    function validateEmail(email) {
+        const emailRegex =
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return emailRegex.test(String(email).toLowerCase());
+    };
 
     function handleChange(event) {
         console.log('click')
