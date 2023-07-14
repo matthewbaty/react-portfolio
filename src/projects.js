@@ -21,6 +21,13 @@ export const projects = [
         repoLink: 'https://github.com/matthewbaty/text-editor',
     },
     {
+        title: 'Scheduli',
+        description: 'A scheduling calendar that includes functionality for the business owner to send a link to schedule appointments specific to their calendar.',
+        image: require('./assets/images/scheduli.png'),
+        deployLink: 'https://scheduli-adfba105dbbc.herokuapp.com/',
+        repoLink: 'https://github.com/JohnnyB90/Scheduli',
+    },
+    {
         title: 'Weather Dashboard',
         description: 'This is a weather dashboard that will provide the user with the current forecast of the searched city as well as a 5 day future forecast.',
         image: require('./assets/images/weather-dashboard.png'),
